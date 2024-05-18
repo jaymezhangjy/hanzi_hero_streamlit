@@ -56,7 +56,6 @@ with upload_spelling_list:
 
         # List of Chinese characters selected by user
         selected_char = edited_df.loc[edited_df['Yes/No'] == True]['Words'].tolist()
-        st.write(selected_char)
 
         if selected_char not in st.session_state:
             st.session_state.selected_char = selected_char

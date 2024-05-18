@@ -29,9 +29,7 @@ def load_model():
 
 header = st.container()
 question = st.container()
-question1 = st.container()
-question2 = st.container()
-question3 = st.container()
+
 
 with header:
     st.title(':rainbow[Welcome to Hanzi Hero] 🥷🏼')
@@ -69,9 +67,9 @@ with question:
         predicted_class = np.argmax(prediction, axis=1)
         predicted_char = class_labels[predicted_class[0]]
 
-        st.write(prediction)
-        st.write(predicted_class)
-        st.write(predicted_char)
+        # st.write(prediction)
+        # st.write(predicted_class)
+        # st.write(predicted_char)
 
         if predicted_char == st.session_state.selected_char[i]:
             result = '✅ Correct, great attempt 🙌🏽'
@@ -81,136 +79,4 @@ with question:
 
         if st.button('Check my answer', key=i):
             st.markdown(result)
-
-
-# with question1:
-#     st.subheader(f'Question 1:')
-#     # Creating audio file
-#     audio_file = BytesIO() # To work with in-memory file-like objects without actually writing to or reading from physical file
-#     tts = gTTS('手', lang='zh-TW')
-#     tts.write_to_fp(audio_file)
-#     st.audio(audio_file)
-            
-#     # Creating drawing canvas
-#     canvas = BytesIO()
-#     canvas = st_canvas(
-#                     stroke_width=10,
-#                     height=300,
-#                     width=300,
-#                     background_color='#eee',
-#                     key='手'
-#                 )
-        
-#     preprocessed_image = preprocess_image(canvas.image_data.astype('uint8'))
-        
-#     model = load_model()
-#     with open('class_labels.json', 'r') as f:
-#         class_labels = json.load(f) # loads class_labels saved from model training
-#     prediction = model.predict(preprocessed_image)
-#     predicted_class = np.argmax(prediction, axis=1)
-#     predicted_char = class_labels[predicted_class[0]]
-
-#     # st.write(prediction)
-#     # st.write(predicted_class)
-#     # st.write(predicted_char)
-
-#     if predicted_char == '手':
-#         result = '✅ Correct, great attempt 🙌🏽'
-#     else:
-#         result = '❎ Incorrect, please practise more 💪🏽'
-    
-
-#     if st.button('Check my answer', key='0'):
-#         st.markdown(result)
-        
-
-# with question2:
-#     st.subheader(f'Question 2:')
-#     # Creating audio file
-#     audio_file = BytesIO() # To work with in-memory file-like objects without actually writing to or reading from physical file
-#     tts = gTTS('我', lang='zh-TW')
-#     tts.write_to_fp(audio_file)
-#     st.audio(audio_file)
-            
-#     # Creating drawing canvas
-#     canvas = BytesIO()
-#     canvas = st_canvas(
-#                     stroke_width=10,
-#                     height=300,
-#                     width=300,
-#                     background_color='#eee',
-#                     key='我'
-#                 )
-        
-#     preprocessed_image = preprocess_image(canvas.image_data.astype('uint8'))
-        
-#     model = load_model()
-#     with open('class_labels.json', 'r') as f:
-#         class_labels = json.load(f) # loads class_labels saved from model training
-#     prediction = model.predict(preprocessed_image)
-#     predicted_class = np.argmax(prediction, axis=1)
-#     predicted_char = class_labels[predicted_class[0]]
-
-#     # st.write(prediction)
-#     # st.write(predicted_class)
-#     # st.write(predicted_char)
-
-#     if predicted_char == '我':
-#         result = '✅ Correct, great attempt 🙌🏽'
-#     else:
-#         result = '❎ Incorrect, please practise more 💪🏽'
-    
-#     # st.button('Check my answer Q2', on_click=click_button, key='2')
-#     # if st.session_state.clicked:
-#     #     st.write(result)
-#     if st.button('Check my answer', key='1'):
-#         st.markdown(result)
-
-# with question3:
-#     st.subheader(f'Question 3:')
-#     # Creating audio file
-#     audio_file = BytesIO() # To work with in-memory file-like objects without actually writing to or reading from physical file
-#     tts = gTTS('有', lang='zh-TW')
-#     tts.write_to_fp(audio_file)
-#     st.audio(audio_file)
-            
-#     # Creating drawing canvas
-#     canvas = BytesIO()
-#     canvas = st_canvas(
-#                     stroke_width=10,
-#                     height=300,
-#                     width=300,
-#                     background_color='#eee',
-#                     key='目'
-#                 )
-        
-#     preprocessed_image = preprocess_image(canvas.image_data.astype('uint8'))
-        
-#     model = load_model()
-#     with open('class_labels.json', 'r') as f:
-#         class_labels = json.load(f) # loads class_labels saved from model training
-#     prediction = model.predict(preprocessed_image)
-#     predicted_class = np.argmax(prediction, axis=1)
-#     predicted_char = class_labels[predicted_class[0]]
-
-#     # st.write(prediction)
-#     # st.write(predicted_class)
-#     # st.write(predicted_char)
-
-#     if predicted_char == '有':
-#         result = '✅ Correct, great attempt 🙌🏽'
-#     else:
-#         result = '❎ Incorrect, please practise more 💪🏽'
-    
-#     # st.button('Check my answer Q3', on_click=click_button, key='3')
-#     # if st.session_state.clicked:
-#     #     st.write(result)
-
-#     if st.button('Check my answer', key='2'):
-#         st.markdown(result)
-            
-
-
-
-
 
