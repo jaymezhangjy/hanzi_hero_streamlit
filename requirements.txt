@@ -1,0 +1,8 @@
+gTTS==2.5.1
+numpy==1.23.5
+pandas==2.2.2
+Pillow==10.3.0
+regex==2023.10.3
+streamlit==1.32.0
+streamlit_drawable_canvas==0.9.3
+tensorflow==2.12.0
