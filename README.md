@@ -21,7 +21,7 @@ This repository showcases the deployment of the `hanzi_hero` model on Streamlit 
 
 ## Limitations and Improvements
 
-It is important to note that the model is currently trained only on 14 single Chinese characters indicated in this [sample spelling list](sample_spelling_lists/P1_week_6_spelling_list.png) obtained from a local MOE school's [website](https://www.punggolcovepri.moe.edu.sg/for-parents/Subject-Downloads/mother-tongue-spelling-list/). For the model to be adequately functional for the PSLE level, we would require a minimum of 1,200 Chinese characters.  
+It is important to note that the model is currently trained only on 14 single Chinese characters indicated in this [sample spelling list](sample_spelling_lists/P1_week_6_spelling_list.png) obtained from a local MOE school's [website](https://www.punggolcovepri.moe.edu.sg/for-parents/Subject-Downloads/mother-tongue-spelling-list/). For the model to be adequately functional for the PSLE level, we would require a minimum of 1,200 Chinese characters. For a basic command of the language for daily usage, we would need the model to be trained on between 2,000 to 3,000 Chinese characters.  
   
 Also, there will also be multiple Chinese characters with the same pronunciation. We would need to further improve the model such that it is able to recognise vocabulary and idioms of at least 2 characters.    
   
