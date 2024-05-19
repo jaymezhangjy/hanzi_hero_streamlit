@@ -27,12 +27,14 @@ def load_model():
      return model
 
 
+st.set_page_config(page_title='Hanzi Hero', page_icon='images/hanzi_hero_icon.png')
 header = st.container()
 question = st.container()
 
 
 with header:
     st.title(':rainbow[Welcome to Hanzi Hero] 🥷🏼')
+    st.caption('By Jayme Zhang', unsafe_allow_html=False)
     st.header("Training in Progress 🥋", divider='rainbow')
     st.markdown('''Click the Play button :arrow_forward: to listen to the word, and write it :writing_hand: in the space provided. When you are done, click 'Check my answer'.''')
 
@@ -47,7 +49,7 @@ with question:
         tts = gTTS(st.session_state.selected_char[i], lang='zh-TW')
         tts.write_to_fp(audio_file)
         st.audio(audio_file)
-                
+                    
         # Creating drawing canvas
         canvas = BytesIO()
         canvas = st_canvas(
@@ -56,10 +58,10 @@ with question:
                         width=300,
                         background_color='#eee',
                         key=st.session_state.selected_char[i]
-                    )
-            
+                        )
+                
         preprocessed_image = preprocess_image(canvas.image_data.astype('uint8'))
-            
+                
         model = load_model()
         with open('class_labels.json', 'r') as f:
             class_labels = json.load(f) # loads class_labels saved from model training

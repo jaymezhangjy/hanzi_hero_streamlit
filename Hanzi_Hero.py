@@ -10,12 +10,15 @@ from tensorflow import keras
 import json
 
 
+st.set_page_config(page_title='Hanzi Hero', page_icon='images/hanzi_hero_icon.png')
 header = st.container()
 upload_spelling_list = st.container()
+st.session_state.selected_char = []
 
 
 with header:
-    st.title(':rainbow[Welcome to Hanzi Hero] 🥷🏼')
+    st.title(':rainbow[Welcome to Hanzi Hero] 🥷🏼' )
+    st.caption('By Jayme Zhang', unsafe_allow_html=False)
     st.markdown('''With the help of this tool, all you need to do is to upload the spelling list :memo:, select the words to test for this session :white_check_mark:, and click 'Let the training begin 🥋'.''')
 
     

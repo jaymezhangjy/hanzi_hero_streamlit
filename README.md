@@ -1,15 +1,12 @@
-<img src="http://imgur.com/1ZcRyrc.png" style="float: left; margin: 20px; height: 55px">
+<img src='images/hanzi_hero_icon.png' style="float: left; margin: 20px; height: 55px">
 
+# Hanzi Hero: Empowering Kids to Master Chinese Characters - Deployment to Streamlit Cloud  
+<div style="text-align: right"> <H3> By Jayme Zhang </div>
 
-# Hanzi Hero: Empowering Kids to Master Chinese Characters
-# Deployment to Streamlit Cloud
-### DSI-SG-42 Jayme Zhang
-
----
-
+  
 ## Introduction
 
-This repository showcases the deployment of the `hanzi_hero` model on Streamlit Cloud. This allows users to experience the model's capabilities through a web application. It can be accessed via this [link](https://hanzi-hero-app.streamlit.app/): https://hanzi-hero-app.streamlit.app/.
+This repository showcases the deployment of the `hanzi_hero` model on Streamlit Cloud. This allows users to experience the model's capabilities through a web application. It can be accessed via this [link](https://hanzi-hero.streamlit.app/): https://hanzi-hero.streamlit.app/.
 
 
 ## User Experience Walkthrough
