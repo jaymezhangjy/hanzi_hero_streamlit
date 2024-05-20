@@ -13,7 +13,10 @@ More details on the processes and codes needed to build the image recognition mo
 ## User Experience Walkthrough
 
 A short clip of the entire user experience can be viewed below:
-![Sample clip of Hanzi Hero Streamlit](images/sample_clip_st420.mov)
+
+https://github.com/jaymezhangjy/hanzi_hero_streamlit/assets/156636532/6bb97d37-ed9e-4867-8af8-eb7d8f097217
+
+
 
 1. Firstly, parents can upload an image of their child's Chinese spelling list.  
 2. The Chinese characters will be extracted and displayed, and parents can select the words to be tested for this session with the use of checkboxes.
