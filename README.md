@@ -6,10 +6,14 @@
   
 ## Introduction
 
-This repository showcases the deployment of the `hanzi_hero` model on Streamlit Cloud. This allows users to experience the model's capabilities through a web application. It can be accessed via this [link](https://hanzi-hero.streamlit.app/): https://hanzi-hero.streamlit.app/.
+This repository showcases the deployment of the Hanzi Hero model on Streamlit Cloud. This allows users to experience the model's capabilities through a web application. It can be accessed via this [link](https://hanzi-hero.streamlit.app/): https://hanzi-hero.streamlit.app/.
 
+More details on the processes and codes needed to build the image recognition model are documented in the [Hanzi Hero repository](https://github.com/jaymezhangjy/hanzi_hero).
 
 ## User Experience Walkthrough
+
+A short clip of the entire user experience can be viewed below:
+![Sample clip of Hanzi Hero Streamlit](images/sample_clip_st.mov)
 
 1. Firstly, parents can upload an image of their child's Chinese spelling list.  
 2. The Chinese characters will be extracted and displayed, and parents can select the words to be tested for this session with the use of checkboxes.
